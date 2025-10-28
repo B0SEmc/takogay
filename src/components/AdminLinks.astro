@@ -1,0 +1,42 @@
+---
+import { Waves, Radar, Boxes } from "@lucide/astro";
+---
+
+<div class="fixed right-3 top-3 z-50 print:hidden">
+  <nav
+    class="flex items-center gap-1 rounded-full bg-white/40 p-1 opacity-60 shadow-sm backdrop-blur-sm transition-all duration-200 hover:opacity-100 dark:bg-neutral-900/40"
+    aria-label="Quick admin links"
+  >
+    <a
+      href="http://192.168.1.70:8989/"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Sonarr"
+      aria-label="Sonarr"
+      class="group inline-flex size-7 items-center justify-center rounded-full outline-none transition-all duration-200 text-neutral-300"
+    >
+      <Waves class="pointer-events-none size-5 opacity-70 transition-opacity duration-200 group-hover:opacity-100" />
+      <span class="sr-only">Sonarr</span>
+    </a>
+    <a
+      href="http://192.168.1.70:7878/"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Radarr"
+      class="group inline-flex size-7 items-center justify-center rounded-full outline-none transition-all duration-200 text-neutral-300"
+    >
+      <Radar class="pointer-events-none size-5 opacity-70 transition-opacity duration-200 group-hover:opacity-100" />
+      <span class="sr-only">Radarr</span>
+    </a>
+    <a
+      href="https://192.168.1.70:9443/"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Portainer"
+      class="group inline-flex size-7 items-center justify-center rounded-full outline-none transition-all duration-200 text-neutral-300"
+    >
+      <Boxes class="pointer-events-none size-5 opacity-70 transition-opacity duration-200 group-hover:opacity-100" />
+      <span class="sr-only">Portainer</span>
+    </a>
+  </nav>
+</div>
